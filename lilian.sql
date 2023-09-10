@@ -85,3 +85,9 @@ select alunos.nome as aluno, matriculas.curso
 from alunos
 join matriculas on alunos.id = matriculas.aluno_id
 order by aluno, curso;
+
+--15
+select alunos.nome as aluno, matriculas.curso
+from matriculas
+inner join alunos on matriculas.aluno_id = alunos.id
+order by aluno, curso;
