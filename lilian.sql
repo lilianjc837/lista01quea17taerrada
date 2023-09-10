@@ -79,3 +79,9 @@ select alunos.nome as aluno, matriculas.curso
 from matriculas
 right join alunos on matriculas.aluno_id = alunos.id
 order by curso, aluno;
+
+--12 mayck me perdoa, eu pulei o ex. 12, to fazendo commit de novo pra ficar certinho, aí vai ficar dois ex. 12, foi mal
+select alunos.nome as aluno, matriculas.curso
+from alunos
+join matriculas on alunos.id = matriculas.aluno_id
+order by aluno, curso;
